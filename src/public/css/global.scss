@@ -40,9 +40,4 @@ main {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-gap: 1.25em;
-
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        grid-gap: 5em;
-    }
 }

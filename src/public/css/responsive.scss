@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        min-width: 100%;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-gap: 5em;
+        margin-top: 0;
+    }
+
+    .tags-container {
+        margin-bottom: 0em;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
