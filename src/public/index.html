@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <link rel="stylesheet" href="./css/nouislider.css" />
+        <script src="./js/nouislider.min.js"></script>
+        <title>Store</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>StoreAPI</h1>
+            </div>
+            <form class="search-bar" id="search-form">
+                <input id="search-input" placeholder="Escribe para buscar un producto..." />
+                <button type="submit">Buscar</button>
+            </form>
+        </header>
+
+        <main>
+            <section>
+                <article class="filters">
+                    <h4>Filtrar por categorías</h4>
+                    <nav class="tags-container" id="tags-container"></nav>
+                    <h4>Filtrar por precio</h4>
+                    <div class="price-filter">
+                        <div id="slider"></div>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <div class="product-list" id="product-list"></div>
+            </section>
+        </main>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>
