@@ -23,7 +23,7 @@ noUiSlider.create(slider, {
 slider.noUiSlider.on('change', values => {
     const [minPrice, maxPrice] = values;
 
-    getProducts(searchInput.value, 0, minPrice, maxPrice);
+    getProducts('', 0, minPrice, maxPrice);
 });
 
 async function getProducts(name = '', category, minPrice, maxPrice) {
@@ -108,10 +108,8 @@ async function getCategories() {
 function handleSearch(e) {
     e.preventDefault();
     const name = searchInput.value;
-    const [minPrice, maxPrice] = slider.noUiSlider.get('values');
-    const { category } = document.querySelector('.tag.active').dataset;
 
-    getProducts(name, category, minPrice, maxPrice);
+    getProducts(name);
 }
 
 function handleClickOnTag() {
@@ -120,10 +118,8 @@ function handleClickOnTag() {
 
     this.classList.add('active');
     const category = this.dataset['category'] || 0;
-    const name = searchInput.value;
-    const [minPrice, maxPrice] = slider.noUiSlider.get('values');
 
-    getProducts(name, category, minPrice, maxPrice);
+    getProducts('', category);
 }
 
 getProducts();
