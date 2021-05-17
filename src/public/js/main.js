@@ -24,8 +24,6 @@ slider.noUiSlider.on('change', values => {
     const [minPrice, maxPrice] = values;
 
     getProducts(searchInput.value, 0, minPrice, maxPrice);
-
-    console.log({ minPrice, maxPrice });
 });
 
 async function getProducts(name = '', category, minPrice, maxPrice) {
@@ -57,7 +55,7 @@ async function getProducts(name = '', category, minPrice, maxPrice) {
                     
                     <img src="${item.url_image || '/assets/placeholder.jpg'}" />
                     <h3>${item.name}</h3>
-                    <h4>S/. ${item.price} 
+                    <h4>$ ${item.price} 
                     ${item.discount ? `<span class="badge">-${item.discount}%</span>` : ''}
                     </h4>
                 </div>`;
