@@ -1,9 +1,23 @@
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
+clearSearch = document.getElementById('clear-search');
 const categoryTags = document.querySelectorAll('.tags-container .tag');
 const slider = document.getElementById('slider');
 
 searchForm.addEventListener('submit', handleSearch);
+
+searchInput.addEventListener('keyup', function () {
+    if (this.value.trim()) {
+        clearSearch.style.display = 'flex';
+    } else {
+        clearSearch.style.display = 'none';
+    }
+});
+
+clearSearch.addEventListener('click', function () {
+    searchInput.value = '';
+    getProducts('');
+});
 
 noUiSlider.create(slider, {
     start: [0, 20000],
