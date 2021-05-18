@@ -141,6 +141,3 @@ function handleClickOnTag() {
 
 getProducts();
 getCategories();
-
-// los cristianos son mejores?
-// o se creen mejores?
