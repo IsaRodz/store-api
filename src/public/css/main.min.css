@@ -16,7 +16,7 @@ header { background: #fff; display: -webkit-box; display: -ms-flexbox; display: 
 
 .search-bar { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; min-width: 40%; max-width: 100%; background: rgba(0, 0, 0, 0.05); border-radius: 5px; }
 
-.search-bar #clear-search { position: absolute; top: 0; left: 0; bottom: 0; -ms-flex-item-align: stretch; -ms-grid-row-align: stretch; align-self: stretch; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0.5em; }
+.search-bar #clear-search { position: absolute; top: 0; left: 0; bottom: 0; -ms-flex-item-align: stretch; -ms-grid-row-align: stretch; align-self: stretch; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0.5em; cursor: pointer; }
 
 .search-bar #clear-search i { color: #7a7a7a; }
 
