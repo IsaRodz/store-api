@@ -16,6 +16,7 @@ searchInput.addEventListener('keyup', function () {
 
 clearSearch.addEventListener('click', function () {
     searchInput.value = '';
+    this.style.display = 'none';
     getProducts('');
 });
 
